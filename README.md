@@ -16,6 +16,8 @@ Add a description for your project here
 5. `rails db:create db:migrate db:seed` builds the database, runs initial migrations and seeds the database
 6. To run the app use a process manager like [hivemind](https://github.com/DarthSim/hivemind) to run the app locally from the development Procfile `hivemind Procfile.dev`. This mirrors how the app will run in production on Heroku.
 
+> Note: If you don't have Hivemind installed you can alternatively run `rails s` to run the rails server.
+
 ## Security
 
 This project uses [brakeman](https://github.com/presidentbeef/brakeman) to detect potential security vulnerabilities. Run `brakeman` in the root of the project to do a security scan.
