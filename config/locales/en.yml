@@ -38,3 +38,7 @@ en:
     submit:
       eligibility_check:
         create: 'Check eligibility'
+  screens:
+    eligibility_success:
+      title: 'Success'
+      message: 'Great news. We deliver to your area.'
