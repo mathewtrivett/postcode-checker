@@ -30,4 +30,11 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  hello: 'Hello world'
+  helpers:
+    label:
+      eligibility_check:
+        postcode: 'What is your postcode?'
+    submit:
+      eligibility_check:
+        create: 'Check eligibility'

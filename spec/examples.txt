@@ -1,9 +1,9 @@
 example_id                                                | status | run_time        |
 --------------------------------------------------------- | ------ | --------------- |
-./spec/models/eligibility_check_spec.rb[1:1]              | passed | 0.00409 seconds |
-./spec/requests/eligibility_check_request_spec.rb[1:1:1]  | passed | 0.07513 seconds |
-./spec/requests/eligibility_check_request_spec.rb[1:1:2]  | passed | 0.00994 seconds |
-./spec/routing/eligibility_checks_routing_spec.rb[1:1:1]  | passed | 0.00106 seconds |
-./spec/routing/eligibility_checks_routing_spec.rb[1:1:2]  | passed | 0.00151 seconds |
-./spec/views/eligibility_checks/new.html.erb_spec.rb[1:1] | failed | 0.00398 seconds |
-./spec/views/eligibility_checks/new.html.erb_spec.rb[1:2] | failed | 0.0299 seconds  |
+./spec/models/eligibility_check_spec.rb[1:1]              | passed | 0.00254 seconds |
+./spec/requests/eligibility_check_request_spec.rb[1:1:1]  | passed | 0.0806 seconds  |
+./spec/requests/eligibility_check_request_spec.rb[1:1:2]  | passed | 0.01081 seconds |
+./spec/routing/eligibility_checks_routing_spec.rb[1:1:1]  | passed | 0.00134 seconds |
+./spec/routing/eligibility_checks_routing_spec.rb[1:1:2]  | passed | 0.00126 seconds |
+./spec/views/eligibility_checks/new.html.erb_spec.rb[1:1] | passed | 0.00436 seconds |
+./spec/views/eligibility_checks/new.html.erb_spec.rb[1:2] | passed | 0.00714 seconds |
