@@ -1,2 +1,8 @@
 <h1>EligibilityCheck#new</h1>
 <p>Find me in app/views/eligibility_checks/new.html.erb</p>
+
+<%= form_with model: @eligibility_check do |form| %>
+<%= form.label :postcode %>
+<%= form.text_field :postcode %>
+<%= form.submit %>
+<% end %>
