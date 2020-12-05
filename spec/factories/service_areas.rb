@@ -3,5 +3,13 @@
 FactoryBot.define do
   factory :service_area do
     name { 'MyString' }
+
+    factory :southwark_service_area do
+      name { 'Southwark' }
+    end
+
+    factory :lambeth_service_area do
+      name { 'Southwark' }
+    end
   end
 end
