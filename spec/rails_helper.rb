@@ -9,7 +9,7 @@ abort('The Rails environment is running in production mode!') if Rails.env.produ
 require 'rspec/rails'
 
 # Add additional requires below this line. Rails is not loaded until this point!
-require 'capybara/rspec'
+require 'capybara/rails'
 require 'webmock/rspec'
 require 'support/vcr'
 
@@ -60,6 +60,12 @@ RSpec.configure do |config|
   # The different available types are documented in the features, such as in
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
+
+  # Configuration for View specs
+  config.include Capybara::RSpecMatchers, type: :view
+
+  # Adds support for using url_helpers across the test suite
+  config.include Rails.application.routes.url_helpers
 
   # Filter lines from Rails gems in backtraces.
   config.filter_rails_from_backtrace!
