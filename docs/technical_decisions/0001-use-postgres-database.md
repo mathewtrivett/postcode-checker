@@ -2,17 +2,22 @@
 
 ## Context
 
-This section describes the forces at play, including technological, political, social, and project local. These forces are probably in tension, and should be called out as such. The language in this section is value-neutral. It is simply describing facts.
+Our postcode checker uses a database to store valid service areas and allowed post codes.
+
+Currently our requirements involve looking up a postcode using the [postcodes.io](https://postcodes.io).
+
+In future we may want to build features that involve more sophisticated geolocation capabilities. Most databases do not support geolocation natively.
+
+Postgres is the most geolocation capable SQL database. In future we can enable the PostGIS extension.
 
 ## Decision
 
-This section describes our response to these forces. It is stated in full sentences, with active voice. "We will …"
+We will use Postgres for our database.
 
 ## Status
-A decision may be "proposed" if the project stakeholders haven't agreed with it yet, or "accepted" once it is agreed. If a later ADR changes or reverses a decision, it may be marked as "deprecated" or "superseded" with a reference to its replacement.
+
+Accepted
 
 ## Consequences
 
-This section describes the resulting context, after applying the decision. All consequences should be listed here, not just the "positive" ones. A particular decision may have positive, negative, and neutral consequences, but all of them affect the team and project in the future.
-
-The whole document should be one or two pages long. We will write each ADR as if it is a conversation with a future developer. This requires good writing style, with full sentences organized into paragraphs. Bullets are acceptable only for visual style, not as an excuse for writing sentence fragments. (Bullets kill people, even PowerPoint bullets.)
+Postgres is a mature and widely adopted open source database. It serves our immediate needs. Using Postgres allows us to enable more complex geolocation features in the future using the PostGIS extension.
