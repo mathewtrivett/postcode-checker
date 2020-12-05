@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_05_180752) do
+ActiveRecord::Schema.define(version: 2020_12_05_181148) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "allowed_post_codes", force: :cascade do |t|
+    t.string "postcode"
+    t.bigint "service_area_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["postcode"], name: "index_allowed_post_codes_on_postcode"
+    t.index ["service_area_id"], name: "index_allowed_post_codes_on_service_area_id"
+  end
 
   create_table "service_areas", force: :cascade do |t|
     t.string "name"
@@ -22,4 +31,5 @@ ActiveRecord::Schema.define(version: 2020_12_05_180752) do
     t.index ["name"], name: "index_service_areas_on_name"
   end
 
+  add_foreign_key "allowed_post_codes", "service_areas"
 end
