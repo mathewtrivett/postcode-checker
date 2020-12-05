@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe ServiceArea, type: :model do
@@ -7,6 +9,7 @@ RSpec.describe ServiceArea, type: :model do
 
   describe 'assocations' do
     it { is_expected.to have_many(:allowed_post_codes).dependent(:destroy) }
+    it { is_expected.to accept_nested_attributes_for(:allowed_post_codes) }
   end
 
   describe 'indices' do
