@@ -2,3 +2,6 @@ require:
   - rubocop-rails
   - rubocop-rspec
   - rubocop-performance
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
