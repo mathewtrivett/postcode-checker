@@ -1,0 +1,10 @@
+<%= form_with model: @eligibility_check, local: true do |form| %>
+<div>
+  <%= form.label :postcode %>
+  <% if @eligibility_check.errors.any? %>
+  <%= render partial: 'field_errors', locals: { attribute: :postcode } %>
+  <% end %>
+  <%= form.text_field :postcode %>
+</div>
+<%= form.submit %>
+<% end %>
