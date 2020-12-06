@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://postcodes.io/postcodes/E1%207QX
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 06 Dec 2020 16:56:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d49697bcb6de35aa0bcadb95a813b3f411607273777; expires=Tue, 05-Jan-21
+        16:56:17 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
+      X-Gnu:
+      - Michael J Blanchard
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"333-lYU+MIHwgVpOmdUtQEkRBd8AZV0"
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '75'
+      Cf-Request-Id:
+      - 06da94a1550000004eb5227000000001
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=mTrOgPXyUpVBUMGskUPJw05G5U4SDzxQYjrFBEOc2OdD8O%2Bsnvi%2F%2BgJYEuzG8RYOVKJIuJyjVgBsfFLFA7lR82YYvbGIbHOYJqQvMuI%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5fd78a15588d004e-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":200,"result":{"postcode":"E1 7QX","quality":1,"eastings":533985,"northings":181441,"country":"England","nhs_ha":"London","longitude":-0.070426,"latitude":51.51601,"european_electoral_region":"London","primary_care_trust":"Tower
+        Hamlets","region":"London","lsoa":"Tower Hamlets 015D","msoa":"Tower Hamlets
+        015","incode":"7QX","outcode":"E1","parliamentary_constituency":"Bethnal Green
+        and Bow","admin_district":"Tower Hamlets","parish":"Tower Hamlets, unparished
+        area","admin_county":null,"admin_ward":"Spitalfields & Banglatown","ced":null,"ccg":"NHS
+        Tower Hamlets","nuts":"Tower Hamlets","codes":{"admin_district":"E09000030","admin_county":"E99999999","admin_ward":"E05009333","parish":"E43000220","parliamentary_constituency":"E14000555","ccg":"E38000186","ccg_id":"08V","ced":"E99999999","nuts":"UKI42"}}}'
+  recorded_at: Sun, 06 Dec 2020 16:56:17 GMT
+recorded_with: VCR 6.0.0

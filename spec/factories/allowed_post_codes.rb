@@ -42,5 +42,13 @@ FactoryBot.define do
     factory :unsupported_postcode do
       postcode { 'NG13AL' }
     end
+
+    factory :tower_hamlets_postcode do
+      postcode { 'E1 7QX' }
+    end
+
+    factory :hammersmith_and_fulham_postcode do
+      postcode { 'W12 8TT' }
+    end
   end
 end

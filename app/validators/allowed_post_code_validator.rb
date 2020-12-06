@@ -13,11 +13,15 @@ class AllowedPostCodeValidator < ActiveModel::EachValidator
     record.errors.add(attribute, :not_in_service) unless value.present? && valid_service_area?(response, value)
   end
 
+  # Validates if the postcode can be served
+  # @param value [Object] The value passed to the validator
+  # @param response [Net::HTTPResponse]
+  # @return [Boolean]
   def valid_service_area?(response, value)
     lsoa_code = response.dig(:result, :lsoa) if response.present?
-    lsoa = lsoa_code.split.first if lsoa_code
+    lsoa = lsoa_code.nil? ? nil : lsoa_code[..-6].downcase
     postcode = value.upcase.upcase.gsub(/\s+/, '') if value
-    ServiceArea.exists?(name: lsoa) || AllowedPostCode.exists?(postcode: postcode)
+    ServiceArea.exists?(['lower(name) = ?', lsoa]) || AllowedPostCode.exists?(postcode: postcode)
   end
 
   # Creates a simple client to query the postcode service
