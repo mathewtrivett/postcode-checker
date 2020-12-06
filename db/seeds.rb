@@ -22,16 +22,16 @@
   ServiceArea.find_or_create_by! area
 end
 
-ServiceArea.find_by(name: 'Southwark').allowed_post_codes << AllowedPostCode.find_or_create_by!(postcode: 'SE1 7QD')
-ServiceArea.find_by(name: 'Lambeth').allowed_post_codes << AllowedPostCode.find_or_create_by!(postcode: 'SE1 7QA')
+ServiceArea.find_by(name: 'Southwark').allowed_post_codes << AllowedPostCode.find_or_create_by!(postcode: 'SE17QD')
+ServiceArea.find_by(name: 'Lambeth').allowed_post_codes << AllowedPostCode.find_or_create_by!(postcode: 'SE17QA')
 
 # Create AllowedPostCodes that fall outside of the ServiceArea
 [
   {
-    postcode: 'SH24 1AA'
+    postcode: 'SH241AA'
   },
   {
-    postcode: 'SH24 1AB'
+    postcode: 'SH241AB'
   }
 ].each do |postcode|
   AllowedPostCode.find_or_create_by! postcode
