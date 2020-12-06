@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://postcodes.io/postcodes/E1%207QX
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 06 Dec 2020 17:13:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8c55fad791c7ba5ae7bee6ec56246c731607274798; expires=Tue, 05-Jan-21
+        17:13:18 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
+      X-Gnu:
+      - Michael J Blanchard
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"333-lYU+MIHwgVpOmdUtQEkRBd8AZV0"
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '1096'
+      Cf-Request-Id:
+      - 06daa4340200006b95ae8d9000000001
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=y1g1scCuCyiBohdwzXUm8PzxABQ2CecANil%2FiBXycg5J%2FNwDkCc2iD4cqShSMiKfWgPulcCFnWQaA%2BF7FKRNSpFPYxZZ7wsVxEEww6Q%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5fd7a3000f616b95-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":200,"result":{"postcode":"E1 7QX","quality":1,"eastings":533985,"northings":181441,"country":"England","nhs_ha":"London","longitude":-0.070426,"latitude":51.51601,"european_electoral_region":"London","primary_care_trust":"Tower
+        Hamlets","region":"London","lsoa":"Tower Hamlets 015D","msoa":"Tower Hamlets
+        015","incode":"7QX","outcode":"E1","parliamentary_constituency":"Bethnal Green
+        and Bow","admin_district":"Tower Hamlets","parish":"Tower Hamlets, unparished
+        area","admin_county":null,"admin_ward":"Spitalfields & Banglatown","ced":null,"ccg":"NHS
+        Tower Hamlets","nuts":"Tower Hamlets","codes":{"admin_district":"E09000030","admin_county":"E99999999","admin_ward":"E05009333","parish":"E43000220","parliamentary_constituency":"E14000555","ccg":"E38000186","ccg_id":"08V","ced":"E99999999","nuts":"UKI42"}}}'
+  recorded_at: Sun, 06 Dec 2020 17:13:18 GMT
+- request:
+    method: get
+    uri: http://postcodes.io/postcodes/W12%208TT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 06 Dec 2020 17:14:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d27eb94cb69447dd67b5f8c4a3be457981607274878; expires=Tue, 05-Jan-21
+        17:14:38 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
+      X-Gnu:
+      - Michael J Blanchard
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"37e-Om9QIeKhIV59+afAAthPlPlFGcc"
+      Cf-Cache-Status:
+      - MISS
+      Cf-Request-Id:
+      - 06daa56e4e0000008d92aaf000000001
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=jrAydJi58KTOMHP96Xdf0EMpLcQk0YjUp4%2FZBKmsjom67o93r72KMWaNbuMZ0f7KfXtyjvteI9n%2BPy53x6y6qMGEYsWLsqGx0iO51CU%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5fd7a4f6dabe008d-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":200,"result":{"postcode":"W12 8TT","quality":1,"eastings":523329,"northings":179771,"country":"England","nhs_ha":"London","longitude":-0.224499,"latitude":51.503426,"european_electoral_region":"London","primary_care_trust":"Hammersmith
+        and Fulham","region":"London","lsoa":"Hammersmith and Fulham 005C","msoa":"Hammersmith
+        and Fulham 005","incode":"8TT","outcode":"W12","parliamentary_constituency":"Hammersmith","admin_district":"Hammersmith
+        and Fulham","parish":"Hammersmith and Fulham, unparished area","admin_county":null,"admin_ward":"Shepherd''s
+        Bush Green","ced":null,"ccg":"NHS Hammersmith and Fulham","nuts":"Kensington
+        & Chelsea and Hammersmith & Fulham","codes":{"admin_district":"E09000013","admin_county":"E99999999","admin_ward":"E05000263","parish":"E43000203","parliamentary_constituency":"E14000726","ccg":"E38000070","ccg_id":"08C","ced":"E99999999","nuts":"UKI33"}}}'
+  recorded_at: Sun, 06 Dec 2020 17:14:38 GMT
+recorded_with: VCR 6.0.0

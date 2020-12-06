@@ -9,6 +9,8 @@ RSpec.describe AllowedPostCodeValidator, type: :model do
   before do
     create(:southwark_service_area)
     create(:lambeth_service_area)
+    create(:service_area, name: 'Tower Hamlets')
+    create(:service_area, name: 'hammersmith and fulham')
     create(:SH241AA)
     create(:SH241AB)
   end
@@ -64,6 +66,18 @@ RSpec.describe AllowedPostCodeValidator, type: :model do
       it {
         VCR.use_cassette('postcodes/upcase') do
           expect(model).to allow_value(build(:SH24_1AA).postcode).for(:postcode)
+        end
+      }
+
+      it {
+        VCR.use_cassette('postcodes/tower_hamlets') do
+          expect(model).to allow_value(build(:tower_hamlets_postcode).postcode).for(:postcode)
+        end
+      }
+
+      it {
+        VCR.use_cassette('postcodes/hammersmith_and_fullham', record: :new_episodes) do
+          expect(model).to allow_value(build(:hammersmith_and_fulham_postcode).postcode).for(:postcode)
         end
       }
     end
