@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_06_140625) do
+ActiveRecord::Schema.define(version: 2020_12_06_141735) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2020_12_06_140625) do
     t.bigint "service_area_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["postcode"], name: "index_allowed_post_codes_on_postcode"
+    t.index ["postcode"], name: "index_allowed_post_codes_on_postcode", unique: true
     t.index ["service_area_id"], name: "index_allowed_post_codes_on_service_area_id"
   end
 
