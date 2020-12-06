@@ -15,14 +15,20 @@ FactoryBot.define do
       service_area factory: :lambeth_service_area
     end
 
+    factory :sh24_1aa_postcode do
+      postcode { 'SH241AA' }
+    end
+
+    factory :sh24_1ab_postcode do
+      postcode { 'SH241AB' }
+    end
+
     factory :invalid_postcode do
       postcode { 42 }
-      service_area { nil }
     end
 
     factory :unsupported_postcode do
       postcode { 'NG13AL' }
-      service_area { nil }
     end
   end
 end

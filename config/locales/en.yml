@@ -42,3 +42,7 @@ en:
     eligibility_success:
       title: 'Success'
       message: 'Great news. We deliver to your area.'
+  activerecord:
+    errors:
+      messages:
+        not_in_service: 'We do not currently deliver to your area.'

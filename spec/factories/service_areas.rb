@@ -9,7 +9,7 @@ FactoryBot.define do
     end
 
     factory :lambeth_service_area do
-      name { 'Southwark' }
+      name { 'Lambeth' }
     end
   end
 end

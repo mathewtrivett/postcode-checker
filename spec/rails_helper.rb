@@ -76,3 +76,4 @@ end
 # Add support for shoulda_matchers,
 # I believe this needs to be loaded after Rails has loaded
 require 'support/shoulda_matchers'
+require 'support/with_model'
