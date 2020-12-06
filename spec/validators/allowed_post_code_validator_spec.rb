@@ -9,8 +9,8 @@ RSpec.describe AllowedPostCodeValidator, type: :model do
   before do
     create(:southwark_service_area)
     create(:lambeth_service_area)
-    create(:sh24_1aa_postcode)
-    create(:sh24_1ab_postcode)
+    create(:SH241AA)
+    create(:SH241AB)
   end
 
   describe '.validate' do
@@ -38,14 +38,32 @@ RSpec.describe AllowedPostCodeValidator, type: :model do
       }
 
       it {
-        VCR.use_cassette('postcodes/sh24_1aa') do
-          expect(model).to allow_value(build(:sh24_1aa_postcode).postcode).for(:postcode)
+        VCR.use_cassette('postcodes/SH241AA') do
+          expect(model).to allow_value(build(:SH241AA).postcode).for(:postcode)
         end
       }
 
       it {
-        VCR.use_cassette('postcodes/sh24_1ab') do
-          expect(model).to allow_value(build(:sh24_1ab_postcode).postcode).for(:postcode)
+        VCR.use_cassette('postcodes/SH241AB') do
+          expect(model).to allow_value(build(:SH241AB).postcode).for(:postcode)
+        end
+      }
+
+      it {
+        VCR.use_cassette('postcodes/lower_case') do
+          expect(model).to allow_value(build(:sh24_1aa).postcode).for(:postcode)
+        end
+      }
+
+      it {
+        VCR.use_cassette('postcodes/mixed_case') do
+          expect(model).to allow_value(build(:SH24_1Aa).postcode).for(:postcode)
+        end
+      }
+
+      it {
+        VCR.use_cassette('postcodes/upcase') do
+          expect(model).to allow_value(build(:SH24_1AA).postcode).for(:postcode)
         end
       }
     end

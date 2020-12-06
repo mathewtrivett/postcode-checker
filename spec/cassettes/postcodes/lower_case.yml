@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://postcodes.io/postcodes/SH241AB
+    uri: http://postcodes.io/postcodes/sh24%201aa
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: Not Found
     headers:
       Date:
-      - Sun, 06 Dec 2020 02:36:00 GMT
+      - Sun, 06 Dec 2020 16:33:32 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dfb0de8f03ed120d1c7d4b287de25ccc31607222160; expires=Tue, 05-Jan-21
-        02:36:00 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
+      - __cfduid=d4475d6f5a84fca4afd079f647a213d0e1607272412; expires=Tue, 05-Jan-21
+        16:33:32 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
       X-Gnu:
       - Michael J Blanchard
       Access-Control-Allow-Origin:
@@ -36,11 +36,13 @@ http_interactions:
       Etag:
       - W/"2b-60dCBHUxbddknotWwisUCk6O8SA"
       Cf-Cache-Status:
-      - MISS
+      - HIT
+      Age:
+      - '1083'
       Cf-Request-Id:
-      - 06d78103230000408faa313000000001
+      - 06da7fcee600000052afbe8000000001
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=L6kRpdhD46sQLNgTjoKA%2FMpHKqzea2zghFNdwBZqgVLaGBtkyTTW4hVC%2ByZE2p7g%2FeCN%2BEdnxy%2FtgOBf%2B5XPyE8w18QXxqlEt7h8%2FVI%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=JhZLvzTEAptIOksrRajigSs4eKoZIGoipdO%2BLJyc1%2BR7qx8NbXncIMSWevEALh%2FcCY5yyUWuhSL1opZTWoWFphz4mHAQfwaDEQgQo0o%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Vary:
@@ -48,9 +50,9 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 5fd29de50f86408f-LHR
+      - 5fd768c4adf80052-LHR
     body:
       encoding: UTF-8
       string: '{"status":404,"error":"Postcode not found"}'
-  recorded_at: Sun, 06 Dec 2020 02:36:00 GMT
+  recorded_at: Sun, 06 Dec 2020 16:33:32 GMT
 recorded_with: VCR 6.0.0

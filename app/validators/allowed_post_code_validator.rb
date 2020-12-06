@@ -16,7 +16,8 @@ class AllowedPostCodeValidator < ActiveModel::EachValidator
   def valid_service_area?(response, value)
     lsoa_code = response.dig(:result, :lsoa) if response.present?
     lsoa = lsoa_code.split.first if lsoa_code
-    ServiceArea.exists?(name: lsoa) || AllowedPostCode.exists?(postcode: value)
+    postcode = value.upcase.upcase.gsub(/\s+/, '') if value
+    ServiceArea.exists?(name: lsoa) || AllowedPostCode.exists?(postcode: postcode)
   end
 
   # Creates a simple client to query the postcode service

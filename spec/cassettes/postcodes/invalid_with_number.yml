@@ -19,7 +19,7 @@ http_interactions:
       message: Not Found
     headers:
       Date:
-      - Sat, 05 Dec 2020 19:57:10 GMT
+      - Sun, 06 Dec 2020 16:33:33 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d558d0102f4741a87e05a3b14205717f91607198230; expires=Mon, 04-Jan-21
-        19:57:10 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
+      - __cfduid=d07c5dedaafd281704d9f27b9f9dd57481607272413; expires=Tue, 05-Jan-21
+        16:33:33 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
       X-Gnu:
       - Michael J Blanchard
       Access-Control-Allow-Origin:
@@ -36,11 +36,13 @@ http_interactions:
       Etag:
       - W/"29-T14TWaKfjMuMFPoRgcsDj2g1ORs"
       Cf-Cache-Status:
-      - MISS
+      - HIT
+      Age:
+      - '74183'
       Cf-Request-Id:
-      - 06d613e0a7000006d18816a000000001
+      - 06da7fd2110000dc4ba8b0b000000001
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=fg0lkqZZvN15df2SQFEr7AEP1ilymiKkLrddLKa2FlcHo%2FaoPIkNjpl2rQj09TU1PhMHvG0iTlp3XhqRJ6b8IdvJjh6PCtEXvOnVc4k%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=zjfTPqsnL2ZRL9NHGXmUJxqVLMhv55AxPIQrvF7U%2BWzq0uit0Vzb7EnbA4okFTnJfbdWUiFn4MEowx3NoJGq6Vc2JeaorXOXET50p7Q%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Vary:
@@ -48,9 +50,9 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 5fd055add8d706d1-LHR
+      - 5fd768c9bec9dc4b-LHR
     body:
       encoding: UTF-8
       string: '{"status":404,"error":"Invalid postcode"}'
-  recorded_at: Sat, 05 Dec 2020 19:57:10 GMT
+  recorded_at: Sun, 06 Dec 2020 16:33:33 GMT
 recorded_with: VCR 6.0.0

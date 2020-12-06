@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 06 Dec 2020 02:32:14 GMT
+      - Sun, 06 Dec 2020 16:33:33 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d4c74b5f811c9e6a555ec0368e869605d1607221934; expires=Tue, 05-Jan-21
-        02:32:14 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
+      - __cfduid=d9695b7314faa04fb4d1f0ed0d7218c541607272413; expires=Tue, 05-Jan-21
+        16:33:33 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
       X-Gnu:
       - Michael J Blanchard
       Access-Control-Allow-Origin:
@@ -36,11 +36,13 @@ http_interactions:
       Etag:
       - W/"2f7-Z5YRqBynTu/2UzNyhZrtiCqfuD4"
       Cf-Cache-Status:
-      - MISS
+      - HIT
+      Age:
+      - '50479'
       Cf-Request-Id:
-      - 06d77d91e30000070e2e11f000000001
+      - 06da7fd09500002cb57daef000000001
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=jJww3bnwCKU%2FDDhhmOFuRAqLgLTn6nmhILPvxm9XobIDgPaf7fBsxFK6wIfRcHolq0%2F4VjI0oBTRUWcV2ERr4BhvP0TDk846%2FvPyOLE%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=4XTbqhGMBwwIZe%2F1to5w1QHjw7Ht7nIuPxdvCQ1mKoTffMc15TlBdvzDqIVFi25nsjbhyqjbGljSv3Xr5gYf046SjW9h2djaS9klPqI%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Vary:
@@ -48,12 +50,12 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 5fd298630b28070e-LHR
+      - 5fd768c75ec32cb5-LHR
     body:
       encoding: ASCII-8BIT
       string: '{"status":200,"result":{"postcode":"SE1 7QA","quality":1,"eastings":531183,"northings":179317,"country":"England","nhs_ha":"London","longitude":-0.111573,"latitude":51.49758,"european_electoral_region":"London","primary_care_trust":"Lambeth","region":"London","lsoa":"Lambeth
         036B","msoa":"Lambeth 036","incode":"7QA","outcode":"SE1","parliamentary_constituency":"Vauxhall","admin_district":"Lambeth","parish":"Lambeth,
         unparished area","admin_county":null,"admin_ward":"Bishop''s","ced":null,"ccg":"NHS
         South East London","nuts":"Lambeth","codes":{"admin_district":"E09000022","admin_county":"E99999999","admin_ward":"E05000416","parish":"E43000212","parliamentary_constituency":"E14001008","ccg":"E38000244","ccg_id":"72Q","ced":"E99999999","nuts":"UKI45"}}}'
-  recorded_at: Sun, 06 Dec 2020 02:32:14 GMT
+  recorded_at: Sun, 06 Dec 2020 16:33:33 GMT
 recorded_with: VCR 6.0.0
