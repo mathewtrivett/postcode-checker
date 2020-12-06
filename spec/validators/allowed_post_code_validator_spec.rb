@@ -82,7 +82,7 @@ RSpec.describe AllowedPostCodeValidator, type: :model do
     context 'with valid postcode' do
       subject do
         VCR.use_cassette('postcodes/southwark_postcode') do
-          described_class.get_postcode(create(:southwark_post_code).postcode)
+          described_class.get_postcode(build(:southwark_post_code).postcode)
         end
       end
 
@@ -93,7 +93,7 @@ RSpec.describe AllowedPostCodeValidator, type: :model do
     context 'with invalid postcode' do
       subject do
         VCR.use_cassette('postcodes/invalid_with_number') do
-          described_class.get_postcode(create(:invalid_postcode).postcode)
+          described_class.get_postcode(build(:invalid_postcode).postcode)
         end
       end
 
@@ -106,12 +106,12 @@ RSpec.describe AllowedPostCodeValidator, type: :model do
   describe '.fetch_postcode' do
     subject(:fetch_postcode) do
       VCR.use_cassette('postcodes/southwark_postcode') do
-        described_class.fetch_postcode(create(:southwark_post_code).postcode)
+        described_class.fetch_postcode(build(:southwark_post_code).postcode)
       end
     end
 
-    let(:request_uri) { "https://#{postcode_service}/postcodes/#{create(:southwark_post_code).postcode}" }
-    let(:southwark_cache_key) { "postcodes/#{create(:southwark_post_code).postcode}" }
+    let(:request_uri) { "https://#{postcode_service}/postcodes/#{build(:southwark_post_code).postcode}" }
+    let(:southwark_cache_key) { "postcodes/#{build(:southwark_post_code).postcode}" }
 
     context 'without a cached value' do
       before { Rails.cache.clear }
