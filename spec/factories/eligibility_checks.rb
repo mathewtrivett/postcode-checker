@@ -2,6 +2,6 @@
 
 FactoryBot.define do
   factory :eligibility_check do
-    postcode { 'MyString' }
+    postcode { 'SE17QD' }
   end
 end

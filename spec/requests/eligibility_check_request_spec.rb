@@ -24,7 +24,11 @@ RSpec.describe '/eligibility_checks', type: :request do
 
   describe 'POST /eligibility_checks' do
     context 'with valid parameters' do
-      before { post eligibility_checks_path, params: { eligibility_check: valid_params } }
+      before do
+        VCR.use_cassette('postcodes/southwark_postcode') do
+          post eligibility_checks_path, params: { eligibility_check: valid_params }
+        end
+      end
 
       it { is_expected.to redirect_to success_eligibility_checks_path }
     end

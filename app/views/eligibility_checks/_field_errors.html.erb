@@ -1,5 +1,5 @@
-<% @eligibility_check.errors.full_messages_for(attribute).each do |message| %>
+<% @eligibility_check.errors[attribute].each do |error| %>
 <span>
-  <span><%= message %></span>
+  <span><%= error %></span>
 </span>
 <% end %>
