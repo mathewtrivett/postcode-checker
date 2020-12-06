@@ -46,3 +46,12 @@ en:
     errors:
       messages:
         not_in_service: 'We do not currently deliver to your area.'
+  activemodel:
+    errors:
+      messages:
+        not_in_service: 'We do not currently deliver to your area.'
+        models:
+          eligibility_check:
+            attributes:
+              postcode:
+                not_in_service: 'We do not currently deliver to your area.'
