@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 05 Dec 2020 22:27:07 GMT
+      - Sun, 06 Dec 2020 16:33:32 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d4d37e5dd4861a1d239913742b16c2de71607207227; expires=Mon, 04-Jan-21
-        22:27:07 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
+      - __cfduid=d0b987c52bd7c9507d7cb0fd664b86b781607272412; expires=Tue, 05-Jan-21
+        16:33:32 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
       X-Gnu:
       - Michael J Blanchard
       Access-Control-Allow-Origin:
@@ -36,11 +36,13 @@ http_interactions:
       Etag:
       - W/"328-u44qY7noxu73p14ob4V/i1XG2UY"
       Cf-Cache-Status:
-      - MISS
+      - HIT
+      Age:
+      - '65185'
       Cf-Request-Id:
-      - 06d69d28b400000786e2b8a000000001
+      - 06da7fcdbf0000063997bee000000001
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=I5bPfSGxDBWsFSQ0UnJ4R7bnQlSWSCNxzJzwH097mYuBowpPksfJfR1pQ%2BvOP9LbVp5pPgGYPD%2FJRYEM2aa6SbdEMLTaAZp%2B7Ualp0U%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=D2ByukqRgUHi5BcifoIw0rThpIQX2UzaY44830E6tQMCLHKTQmJfpe83536MtxfjDsyrRWysfeV1g0xPPa1gcebeke%2F989AFkp6uxLI%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Vary:
@@ -48,7 +50,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 5fd131545eb10786-LHR
+      - 5fd768c2c8e10639-LHR
     body:
       encoding: ASCII-8BIT
       string: '{"status":200,"result":{"postcode":"SE1 7QD","quality":1,"eastings":531513,"northings":179395,"country":"England","nhs_ha":"London","longitude":-0.106793,"latitude":51.498204,"european_electoral_region":"London","primary_care_trust":"Southwark","region":"London","lsoa":"Southwark
@@ -56,5 +58,5 @@ http_interactions:
         and Old Southwark","admin_district":"Southwark","parish":"Southwark, unparished
         area","admin_county":null,"admin_ward":"St George''s","ced":null,"ccg":"NHS
         South East London","nuts":"Lewisham and Southwark","codes":{"admin_district":"E09000028","admin_county":"E99999999","admin_ward":"E05011114","parish":"E43000218","parliamentary_constituency":"E14000553","ccg":"E38000244","ccg_id":"72Q","ced":"E99999999","nuts":"UKI44"}}}'
-  recorded_at: Sat, 05 Dec 2020 22:27:07 GMT
+  recorded_at: Sun, 06 Dec 2020 16:33:32 GMT
 recorded_with: VCR 6.0.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://postcodes.io/postcodes/42
+    uri: http://postcodes.io/postcodes/SH241AA
     body:
       encoding: US-ASCII
       string: ''
@@ -19,30 +19,30 @@ http_interactions:
       message: Not Found
     headers:
       Date:
-      - Sun, 06 Dec 2020 16:33:32 GMT
+      - Sun, 06 Dec 2020 16:33:33 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '41'
+      - '43'
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dd112289478537ca52290c021eac528171607272412; expires=Tue, 05-Jan-21
-        16:33:32 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
+      - __cfduid=d7e190dd8630dc9d746df161c0533b26e1607272413; expires=Tue, 05-Jan-21
+        16:33:33 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
       X-Gnu:
       - Michael J Blanchard
       Access-Control-Allow-Origin:
       - "*"
       Etag:
-      - W/"29-T14TWaKfjMuMFPoRgcsDj2g1ORs"
+      - W/"2b-60dCBHUxbddknotWwisUCk6O8SA"
       Cf-Cache-Status:
       - HIT
       Age:
-      - '74182'
+      - '50439'
       Cf-Request-Id:
-      - 06da7fcd0f000006527aa81000000001
+      - 06da7fcf790000407edb968000000001
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=AnCCEXg6AQXrdLigk%2F7yAHAYqnDsxd0Qd4oZnpVMBBJ5IaDAp8pnPjU0fy6pdolH%2FF4H7Djm3%2F%2FFSRwZxBOJycjSs9jhw9gVwxoozaI%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=v7LfOWvUQcYEDg8umc53CjtdgWJy3sE7%2BWkbqD3XvieXDy%2Bc6JcXxXQ4BrGMVKOTsPUmpsf7fjebBy7NoU%2FRoCGXvJAWF8WkMzlZyV4%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Vary:
@@ -50,9 +50,9 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 5fd768c1b8cc0652-LHR
+      - 5fd768c58ed3407e-LHR
     body:
       encoding: UTF-8
-      string: '{"status":404,"error":"Invalid postcode"}'
-  recorded_at: Sun, 06 Dec 2020 16:33:32 GMT
+      string: '{"status":404,"error":"Postcode not found"}'
+  recorded_at: Sun, 06 Dec 2020 16:33:33 GMT
 recorded_with: VCR 6.0.0
