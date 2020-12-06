@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://postcodes.io/postcodes/SH241AA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sun, 06 Dec 2020 02:32:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '43'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d7c9cfbbe5e011eafd343d4c55a6c67781607221974; expires=Tue, 05-Jan-21
+        02:32:54 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
+      X-Gnu:
+      - Michael J Blanchard
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"2b-60dCBHUxbddknotWwisUCk6O8SA"
+      Cf-Cache-Status:
+      - MISS
+      Cf-Request-Id:
+      - 06d77e2f37000040f5de2da000000001
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=xDx3hLz%2BULFSkSLf3TY17JITXYSLVfeC0Tm4fFkNLhdM3hL9WTfO%2FJd72hOsVhz24uDhNJyNdelzaztd4U%2FxBezkBd0SL6SF9APkkj0%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5fd2995ebc6a40f5-LHR
+    body:
+      encoding: UTF-8
+      string: '{"status":404,"error":"Postcode not found"}'
+  recorded_at: Sun, 06 Dec 2020 02:32:54 GMT
+recorded_with: VCR 6.0.0

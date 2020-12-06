@@ -3,15 +3,72 @@
 require 'rails_helper'
 require 'net/http'
 
-RSpec.describe AllowedPostCodeValidator do
+RSpec.describe AllowedPostCodeValidator, type: :model do
   let(:postcode_service) { ENV['POSTCODE_VALIDATION_SERVICE_URI'] }
 
   before do
     create(:southwark_service_area)
     create(:lambeth_service_area)
+    create(:sh24_1aa_postcode)
+    create(:sh24_1ab_postcode)
   end
 
   describe '.validate' do
+    with_model :ObjectWithPostCode do
+      model do
+        attr_accessor :postcode
+
+        validates :postcode, allowed_post_code: true
+      end
+    end
+
+    subject(:model) { ObjectWithPostCode.new }
+
+    context 'with valid postcode' do
+      it {
+        VCR.use_cassette('postcodes/southwark_postcode') do
+          expect(model).to allow_value(build(:southwark_post_code).postcode).for(:postcode)
+        end
+      }
+
+      it {
+        VCR.use_cassette('postcodes/lambeth_postcode') do
+          expect(model).to allow_value(build(:lambeth_post_code).postcode).for(:postcode)
+        end
+      }
+
+      it {
+        VCR.use_cassette('postcodes/sh24_1aa') do
+          expect(model).to allow_value(build(:sh24_1aa_postcode).postcode).for(:postcode)
+        end
+      }
+
+      it {
+        VCR.use_cassette('postcodes/sh24_1ab') do
+          expect(model).to allow_value(build(:sh24_1ab_postcode).postcode).for(:postcode)
+        end
+      }
+    end
+
+    context 'with invalid postcode' do
+      it {
+        VCR.use_cassette('postcodes/nil_postcode') do
+          expect(model).not_to allow_value(nil).for(:postcode)
+        end
+      }
+
+      it {
+        VCR.use_cassette('postcodes/invalid_postcode') do
+          expect(model).not_to allow_value(build(:invalid_postcode).postcode).for(:postcode)
+        end
+      }
+
+      it {
+        VCR.use_cassette('postcodes/unsupported_postcode') do
+          expect(model).not_to allow_value(build(:unsupported_postcode).postcode).for(:postcode)
+        end
+      }
+    end
   end
 
   describe '.client' do
