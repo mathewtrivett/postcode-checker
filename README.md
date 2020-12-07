@@ -1,11 +1,26 @@
 # postcode_checker
 
-Add a description for your project here
+Postcode Checker is a simple web app to help people find out if their postcode is in a support service area.
 
 ## Pre-requisites
 
 - **Ruby** - You will need at least version: 2.7.2, we use [RVM](https://rvm.io/) to manage different versions of Ruby.
 - **Postgres** - We use Postgres for our database, install it locally on Mac OSX with [Homebrew](https://brew.sh/). Once installed you can run `brew services start postgresql`.
+
+## Environment variables
+
+The project uses environment variables to manage configuration variables and secrets like API keys.
+Using the environment for configuration is a feature of [12 Factor Apps](https://12factor.net/).
+
+In development we use [dotenv](https://github.com/bkeepers/dotenv) to manage environment variables on a per project basis.
+
+1. Create a file in the root of your project with the filename `.env`
+2. There is a `.env.template` file in the root of the project that has all of the keys needed for the application to run locally.
+3. Copy these keys into your `.env` file and set them on your machine.
+
+> As it is not an application secret `POSTCODE_VALIDATION_SERVICE_URI=postcodes.io`
+
+Note: Ordinarily I would store secrets like database credentials in the environment. However to make it easier to get started I have left these configuration values hard coded.
 
 ## Getting started
 
@@ -28,17 +43,13 @@ We use [rspec](https://github.com/rspec/rspec-rails) for automated tests. Run th
 
 ## Documentation
 
-> Don't document the program; program the document. -- unknown
-
 Write and find [the documentation](docs/index.md) in the `docs` directory.
 
 ### Technical decisions
 
 This project uses Architectural Decision Records to document technical decisions.
 
-> Read the [technical decisions](docs/adr/README.md)
-
-## Deployment
+> Read the [technical decisions](docs/technical_decisions/README.md)
 
 ## Contributing
 
