@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe 'CheckPostCodes', type: :feature do
+RSpec.describe 'Check post code', type: :feature do
   subject { page }
 
   before do
