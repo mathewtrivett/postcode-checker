@@ -14,7 +14,7 @@ Postgres is the most geolocation capable SQL database. In future we can enable t
 
 We will use Postgres for our database.
 
-## Status
+## Status
 
 Accepted
 
