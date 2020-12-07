@@ -8,10 +8,12 @@ class EligibilityChecksController < ApplicationController
 
   def create
     @eligibility_check = EligibilityCheck.new eligibility_params
-    if @eligibility_check.valid?
-      redirect_to success_eligibility_checks_path
-    else
-      render :new
+    respond_to do |format|
+      if @eligibility_check.valid?
+        format.html { redirect_to success_eligibility_checks_path }
+      else
+        format.html { render :new }
+      end
     end
   end
 
