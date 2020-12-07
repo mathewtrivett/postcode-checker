@@ -2,6 +2,12 @@
 
 Postcode Checker is a simple web app to help people find out if their postcode is in a support service area.
 
+## Deployed app
+
+Test a staging version of the app online
+
+> https://service-area-check.herokuapp.com
+
 ## Pre-requisites
 
 - **Ruby** - You will need at least version: 2.7.2, we use [RVM](https://rvm.io/) to manage different versions of Ruby.
